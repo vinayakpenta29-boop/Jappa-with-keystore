@@ -23,7 +23,7 @@ jobs:
       # 1. Decode Base64 keystore from GitHub Secrets
       - name: Decode Keystore
         run: |
-          echo "$KEYSTORE_BASE64" | base64 --decode > extramoney.keystore
+          echo "$KEYSTORE_BASE64" | base64 --decode > app/extramoney.keystore
 
       # 2. Make gradlew executable
       - name: Make gradlew executable
